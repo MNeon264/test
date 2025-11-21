@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База отдыха XXXXX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo" data-target="home-page">XXXXX</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" data-target="home-page">Главная</a></li>
+                    
+                    <li><a href="#" data-target="gallery-page">Фотогалерея</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Услуги и Цены</a>
+                        <div class="dropdown-content">
+                            <a href="#" data-target="hotel-page">Гостиница</a>
+                            <a href="#" data-target="fishing-page">Рыбалка</a>
+                            <a href="#" data-target="hunting-page">Охота</a>
+                            <a href="#" data-target="rental-page">Прокат</a>
+                            <a href="#" data-target="processing-page">Обработка улова</a>
+                        </div>
+                    </li>
+
+                    <li><a href="#contact">Бронирование</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="home-page" class="page-section active">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Лучшая рыбалка и охота</h1>
+                <p>Полный пансион, трофеи и профессиональная обработка улова</p>
+                <a href="#contact" class="btn">Забронировать место</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают XXXXX</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Все включено</h3>
+                        <p>Трехразовое питание и комфорт.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Природа</h3>
+                        <p>Уединенные места вдали от города.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Сервис</h3>
+                        <p>Егерское обслуживание высокого класса.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="gallery-page" class="page-section">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Фотогалерея</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">Природа</div>
+                    <div class="gallery-item">Трофеи</div>
+                    <div class="gallery-item">Домики</div>
+                    <div class="gallery-item">Ресторан</div>
+                    <div class="gallery-item">Пирс</div>
+                    <div class="gallery-item">Баня</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="hotel-page" class="page-section">
+        <section class="section bg-light" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Наша Гостиница</h2>
+                
+                <div class="hotel-details">
+                    <div class="hotel-text">
+                        <h3>Комфорт европейского уровня в дикой природе</h3>
+                        <ul class="benefits-list">
+                            <li>Просторные номера из натурального дерева</li>
+                            <li>Ортопедические матрасы для идеального сна</li>
+                            <li>Собственные ванные комнаты с горячей водой</li>
+                            <li>Высокоскоростной Wi-Fi на всей территории</li>
+                            <li>Шумоизоляция и климат-контроль</li>
+                            <li>Ежедневная уборка номеров</li>
+                        </ul>
+                        <p style="margin-top: 20px;">Мы создали условия, чтобы после долгого дня на воде или в лесу вы чувствовали себя как дома.</p>
+                    </div>
+                    <div class="hotel-images">
+                        <div class="img-box" style="background-color: #ccc;">Фото номера 1</div>
+                        <div class="img-box" style="background-color: #bbb;">Фото номера 2</div>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; margin: 50px 0 30px;">Варианты размещения</h3>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-img" style="background-color: #ddd;"></div>
+                        <div class="price-content">
+                            <h3>Стандарт</h3>
+                            <p>2 человека, завтрак включен</p>
+                            <span class="price">4000 ₽ / сутки</span>
+                            <button class="btn-outline" onclick="openModal('Номер Стандарт')">Бронировать</button>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-img" style="background-color: #ccc;"></div>
+                        <div class="price-content">
+                            <h3>Люкс</h3>
+                            <p>4 человека, панорамный вид</p>
+                            <span class="price">8000 ₽ / сутки</span>
+                            <button class="btn-outline" onclick="openModal('Номер Люкс')">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="fishing-page" class="page-section">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Рыбалка</h2>
+                <p style="text-align: center;">Трофейная щука, судак, окунь. Сопровождение профессиональных егерей.</p>
+                <div class="pricing-grid" style="margin-top: 40px;">
+                    <div class="price-card">
+                        <div class="price-img" style="background-color: #aaa;"></div>
+                        <div class="price-content">
+                            <h3>Рыбалка с гидом</h3>
+                            <p>8 часов, топливо включено</p>
+                            <span class="price">10 000 ₽ / день</span>
+                            <button class="btn-outline" onclick="openModal('Рыбалка с гидом')">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="hunting-page" class="page-section">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Сезонная Охота</h2>
+                <p style="text-align: center;">Организация загонной и индивидуальной охоты. Лицензии в наличии.</p>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Водоплавающая дичь</h3>
+                        <p>Утка, гусь в осенний период.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Копытные</h3>
+                        <p>Кабан, лось (по лицензии).</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn" onclick="openModal('Охота')">Узнать сроки и цены</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="rental-page" class="page-section">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Прокат техники</h2>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-content">
+                            <h3>Весельная лодка</h3>
+                            <span class="price">1000 ₽ / день</span>
+                            <button class="btn-outline" onclick="openModal('Весельная лодка')">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-content">
+                            <h3>Катер 30 л.с.</h3>
+                            <span class="price">3500 ₽ / день</span>
+                            <button class="btn-outline" onclick="openModal('Катер 30 лс')">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-content">
+                            <h3>Снасти (спиннинг)</h3>
+                            <span class="price">500 ₽ / день</span>
+                            <button class="btn-outline" onclick="openModal('Снасти')">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="processing-page" class="page-section">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <h2 class="section-title">Обработка трофеев</h2>
+                <p style="text-align: center; margin-bottom: 30px;">Мы подготовим ваш улов к долгому хранению или столу.</p>
+                <ul class="benefits-list" style="max-width: 600px; margin: 0 auto;">
+                    <li>Чистка рыбы - 100 ₽/кг</li>
+                    <li>Филерование - 150 ₽/кг</li>
+                    <li>Вакуумирование (пакет включен) - 100 ₽/упаковка</li>
+                    <li>Глубокая заморозка - Бесплатно</li>
+                    <li>Горячее копчение - 300 ₽/закладка</li>
+                </ul>
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn" onclick="openModal('Обработка улова')">Заказать услугу</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Оставить заявку</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <select id="service-type">
+                        <option value="Не выбрано">Что вас интересует?</option>
+                        <option value="Проживание">Гостиница</option>
+                        <option value="Рыбалка">Рыбалка</option>
+                        <option value="Охота">Охота</option>
+                        <option value="Прокат">Прокат</option>
+                        <option value="Обработка">Обработка улова</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 202X База XXXXX. Все права защищены.</p>
+            <p>Тел: +7 (999) 000-00-00 | Адрес: XXXXX XXX XXXXX XXX</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
