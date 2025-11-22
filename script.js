@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger-menu');
     const nav = document.querySelector('.nav');
     const pages = document.querySelectorAll('.page-section');
 
@@ -21,10 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = link.getAttribute('data-target');
             switchPage(targetId);
         });
-    });
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('active');
     });
 
     document.querySelectorAll('a[href^="#"]:not([data-target])').forEach(anchor => {
